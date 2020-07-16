@@ -6,10 +6,19 @@ namespace Promedio
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Digite la primera nota:");
             int notaUno = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite la segunda nota:");
             int notaDos = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite la tercera nota:");
             int notaTres = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite la cuarta nota:");
             int notaCuatro = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite la quinta nota:");
             int notaCinco = Convert.ToInt32(Console.ReadLine());
 
             int resultadoSuma = notaUno + notaDos + notaTres + notaCuatro + notaCinco;
