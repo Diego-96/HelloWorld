@@ -6,25 +6,39 @@ namespace Registro
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Digite un número:");
-            int cantidaNumeros = Convert.ToInt32(Console.ReadLine());
-            int[] numeros = new int[cantidaNumeros]; 
-            int numeroMayor = numeros[0];         
-            //declarara variable para guardar numero mayor
+            Console.WriteLine("Digite la cantidad de números:");
+            int cantidadNumeros = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < cantidadNumeros ; i++)
+            int[] numeros = new int[cantidadNumeros];
+
+            for (int i = 0; i < cantidadNumeros; i++)
             {
-                if()
-                {
+                Console.WriteLine("Digite un número");
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
-                } 
+            int numeroMayor = numeros[0];
+            int numeroMenor = numeroMayor;
+
+            for (int i = 0; i < cantidadNumeros; i++)
+            {
+                if (numeroMayor > numeros[i])
+                {
+                    numeroMenor = numeros[i];
+                }
                 else
                 {
-                    
+                    numeroMayor = numeros[i];
                 }
             }
-            //recorrer el arreglo  con otro for y hacer un if para validar el numero mayor
+
+            MostrarResultado(numeroMayor, numeroMenor);
+        }
+
+        static void MostrarResultado(int numeroMayor, int numeroMenor)
+        {
+            Console.WriteLine($"El número mayor es: {numeroMayor}");
+            Console.WriteLine($"El número menor es: {numeroMenor}");
         }
     }
 }
