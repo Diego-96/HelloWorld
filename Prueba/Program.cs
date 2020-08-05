@@ -38,6 +38,54 @@ namespace Prueba
                 }
             }
             
+
+
+            Inventario i = new Inventario();
+            int q = 0;
+
+            Producto p = new Producto();
+            p.Nombre = "Chaqueta";
+            i.AgregarProducto(p);
+
+            Producto u = new Producto();            
+            u.Nombre = "Pantalon";    
+            i.AgregarProducto(u);   
+
+            int[] array = new int[1];  
+            string[] array; 
+
+            string nombre = "Diego";
+            string apellido = "Puentes";
+            string nombreCompleto = nombre + " " +  apellido;
+            string nombreCompletoDos = $"\n{nombre} {apellido}";
+            Console.Write(nombreCompleto + nombreCompletoDos);
+
+            /*
+                Diego Puentes
+                Diego Puentes
+            */
+            
+            
+
+            int numeroUno = 4;
+            int numeroDos = 6;
+            int resultado = 0;
+
+            if(numeroUno > numeroDos)
+            {
+                resultado = 1;
+
+            }
+            else if (numeroUno > numeroDos && numeroUno > 0)
+            {
+                
+            }
+            else
+            {
+                resultado = 0;
+            }
+
+
             Producto[] productos = new Producto[5];
             productos[0] = new Producto { Nombre = "Camisa", Precio = 100000 };
         }
@@ -47,6 +95,20 @@ namespace Prueba
     {
         public string Nombre { get; set; }
         public int Precio { get; set; }
+        public bool Verificado { get; set; }
+    }
+
+    class Inventario
+    {
+        public int Categoria { get; set; }
+        public int CantidadUnidades { get; set; }
+
+        public void AgregarProducto(Producto producto)
+        {
+            var baseDatos = new List<Producto>();
+            baseDatos.Add(producto);
+        }
+
     }
 }
 
