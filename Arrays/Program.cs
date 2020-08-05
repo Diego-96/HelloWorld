@@ -6,9 +6,11 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            int[] array = new int[2];
-            array[0] = 2;
-            array[1] = 6;
+            Console.WriteLine("Digite la longitud del array: ");
+            int  longitudArray;
+            longitudArray = Convert.ToInt32(Console.ReadLine());
+            int[] array = new int[longitudArray];
+        
             
             var obj = new Logica();
 
