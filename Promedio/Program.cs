@@ -7,29 +7,31 @@ namespace Promedio
         static void Main(string[] args)
         {
             Console.WriteLine("Digite la primera nota:");
-            int notaUno = Convert.ToInt32(Console.ReadLine());
+            decimal notaUno = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite la segunda nota:");
-            int notaDos = Convert.ToInt32(Console.ReadLine());
+            decimal notaDos = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite la tercera nota:");
-            int notaTres = Convert.ToInt32(Console.ReadLine());
+            decimal notaTres = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite la cuarta nota:");
-            int notaCuatro = Convert.ToInt32(Console.ReadLine());
+            decimal notaCuatro = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite la quinta nota:");
-            int notaCinco = Convert.ToInt32(Console.ReadLine());
+            decimal notaCinco = Convert.ToDecimal(Console.ReadLine());
 
-            int resultadoSuma = notaUno + notaDos + notaTres + notaCuatro + notaCinco;
-            int resultadoDivision = resultadoSuma / 5;
+            Console.WriteLine("Su nota final es: ");
+            decimal resultadoSuma = notaUno + notaDos + notaTres + notaCuatro + notaCinco;
+            decimal resultadoDivision = resultadoSuma / 5;
+            Console.WriteLine(resultadoDivision);
 
             if(resultadoDivision == 5)
             {
                 Console.WriteLine("Excelente");
             }
 
-            else if(resultadoDivision > 2.9 && resultadoDivision < 5)
+            else if(resultadoDivision > 2.9m && resultadoDivision < 5)
             {
                 Console.WriteLine("Aprobe");
             }
