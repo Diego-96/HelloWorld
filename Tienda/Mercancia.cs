@@ -5,6 +5,8 @@ namespace Tienda
 
     public class Mercancia
     {
+        class Productos
+        {
         string[] productos = new string[5] {"Camisa", "Pantalon", "Medias", "Chaqueta", "Guantes"};
 
         Inventario i = new Inventario();
@@ -13,6 +15,8 @@ namespace Tienda
         Productos c = new Productos();
         c.Nombre = "Camisa";
         i.AgregarProducto(c);
+        }
+
     }
 
     class Productos
