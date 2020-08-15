@@ -1,0 +1,32 @@
+body{
+    background-image: url("https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/styles/image_750x424/public/field/image/song-meek/rosalia2.jpg?itok=2DcV9rE1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    color: red;
+    font-size: 2em;
+    text-align: center;
+}
+
+#descripcion{
+    color: white;
+    font-size: 1.5em; 
+}
+
+.derecha{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.izquierda{
+    width: 50%;
+    float: left;
+}
+
+.lista{
+    color: white;
+    font-size: 1.5em; 
+}
