@@ -1,0 +1,27 @@
+body{
+    background-image: url("./img/yamaha-2020-40_g.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo{
+    color:blue;
+    font-size: 4em;
+    text-align: center;
+}
+
+.izquierda{
+    color: white;
+    font-size: 1.0em;
+    float: left;
+    text-align: left;
+}
+
+.centro{
+    color: white;
+}
+
+.derecha{
+    color: white;
+    
+}
