@@ -76,7 +76,7 @@ namespace Tienda
         public bool Verificado { get; set; }
         }
 
-        public bool ProductoVerificado(bool Verificado)
+        public bool ProductoVerificado()
         {
             bool productoVerificado = true;
 

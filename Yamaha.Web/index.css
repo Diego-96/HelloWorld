@@ -1,5 +1,5 @@
 body{
-    background-image: url("./img/yamaha-2020-40_g.jpg");
+    background-image: url("./img/YamahaR1M.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -10,18 +10,10 @@ body{
     text-align: center;
 }
 
-.izquierda{
+.columna{
+    width: 33.3%;
     color: white;
     font-size: 1.0em;
     float: left;
     text-align: left;
-}
-
-.centro{
-    color: white;
-}
-
-.derecha{
-    color: white;
-    
 }
