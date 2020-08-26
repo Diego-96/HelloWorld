@@ -67,6 +67,18 @@ namespace Tienda
             productos[7] = gafas;
 
             return Nombre;
+
+            if (ProductoVerificado)
+            {
+                ProductoVerificado = true;
+                Console.WriteLine("Este producto se encuentra verificado");
+            }
+            else
+            {
+                Console.WriteLine("Este producto no se encuentra verificado");
+            }
+
+            return ProductoVerificado;
         }
 
         public class Producto
