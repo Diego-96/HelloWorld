@@ -11,17 +11,17 @@ function CambiarImagen()
     }
     else if(motoSeleccionada == 2)
     {
-        imagenDinamica.src = "./img/yamaha-2020-40_g.jpg";
+        imagenDinamica.src = "./img/HondaCBR1000RR.jpg";
     }
     else if(motoSeleccionada == 3)
     {
-        imagenDinamica.src = "./img/YamahaR1M.jpg";
+        imagenDinamica.src = "./img/ktm-super-duke-r-2017.jpg";
     }
     else
     {
         imagenDinamica.src = "https://us.123rf.com/450wm/urfandadashov/urfandadashov1809/urfandadashov180901275/109135379-foto-no-disponible-icono-del-vector-aislado-en-la-ilustraci%C3%B3n-transparente-transparente-concepto-de-esp.jpg?ver=6";
     }
-    Saludar('sergio');
+    Saludar('Diego');
 }
 
 function Saludar(nombre)
