@@ -76,23 +76,7 @@ namespace Tienda
         public bool Verificado { get; set; }
         }
 
-        public bool ProductoVerificado()
-        {
-            bool productoVerificado = true;
-
-            if(productoVerificado == true)
-            {
-                productoVerificado = true;
-                Console.WriteLine("Este producto se encuentra verificado");
-            }
-
-            else
-            {
-                Console.WriteLine("Este producto no se encuentra verificado");
-            }
-
-            return productoVerificado;
-        }
+        
     }
     
 
