@@ -40,21 +40,6 @@ namespace Tienda
             chaqueta.Nombre = "Chaqueta";
             chaqueta.Precio = 300000;
             chaqueta.Verificado = true;
-
-            Producto botas = new Producto();
-            botas.Nombre = "Botas";
-            botas.Precio = 150000;
-            botas.Verificado = false;
-
-            Producto bufanda = new Producto();
-            bufanda.Nombre = "Bufanda";
-            bufanda.Precio = 50000;
-            bufanda.Verificado = false;
-
-            Producto gafas = new Producto();
-            gafas.Nombre = "Gafas";
-            gafas.Precio = 65000;
-            gafas.Verificado = false;
             
             Producto[] productos = new Producto[8];
             productos[0] = camisa;
@@ -62,9 +47,6 @@ namespace Tienda
             productos[2] = gorra;
             productos[3] = zapatillas;
             productos[4] = chaqueta;
-            productos[5] = botas;
-            productos[6] = bufanda;
-            productos[7] = gafas;
 
             return "camisa";
            
