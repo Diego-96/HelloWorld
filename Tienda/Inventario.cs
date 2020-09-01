@@ -14,7 +14,7 @@ namespace Tienda
             var baseDatos = new List<Producto>();
             baseDatos.Add(productos);
         }
-        public string Bodega(string Nombre)
+        public string VerificarBodega()
         {
             Producto camisa = new Producto();
             camisa.Nombre = "Camisa";
@@ -66,19 +66,8 @@ namespace Tienda
             productos[6] = bufanda;
             productos[7] = gafas;
 
-            return Nombre;
-
-            if (ProductoVerificado)
-            {
-                ProductoVerificado = true;
-                Console.WriteLine("Este producto se encuentra verificado");
-            }
-            else
-            {
-                Console.WriteLine("Este producto no se encuentra verificado");
-            }
-
-            return ProductoVerificado;
+            return "camisa";
+           
         }
 
         public class Producto
