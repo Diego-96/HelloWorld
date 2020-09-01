@@ -1,6 +1,26 @@
 
-.imagen{
+.imagen-contenedor{
     float: left;
     width: 50%;
+    text-align: center;
+}
+.imagen{
     height:480px; 
+    width: 100%;
+}
+
+.boton{
+    margin-top: 10px;
+    background-color: #4747da;
+    color: white;
+    padding: 15px;
+    border: 1px solid #5858e4;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.especificaciones-texto{
+    display: none;
 }

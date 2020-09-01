@@ -8,6 +8,7 @@ function CambiarImagen()
     if(motoSeleccionada == 1)
     {
         imagenDinamica.src = "./img/cabecera_ninja_zx10r_2011.jpg";
+        
     }
     else if(motoSeleccionada == 2)
     {
@@ -21,10 +22,11 @@ function CambiarImagen()
     {
         imagenDinamica.src = "https://us.123rf.com/450wm/urfandadashov/urfandadashov1809/urfandadashov180901275/109135379-foto-no-disponible-icono-del-vector-aislado-en-la-ilustraci%C3%B3n-transparente-transparente-concepto-de-esp.jpg?ver=6";
     }
-    Saludar('Diego');
+    
 }
 
-function Saludar(nombre)
+function MostrarEspecificaciones()
 {
-    alert('hola ' + nombre);
+    var especificaciones = document.getElementById("especificaciones");
+    especificaciones.classList.remove('especificaciones-texto');
 }

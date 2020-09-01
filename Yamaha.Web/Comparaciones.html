@@ -8,20 +8,35 @@
     <body>
         <h1>YamahaR1M</h1>
 
-        <select id="lista" onchange="CambiarImagen()">
-            <option value="0">Selececione la moto a comparar</option>
-            <option value="1">Kawasaki-ZX10R</option>
-            <option value="2">Honda 1000CBR</option>
-            <option value="3">Duke KTM 1200</option>
-        </select>
-
         <div>
+            <select id="lista" onchange="CambiarImagen()">
+                <option value="0">Selececione la moto a comparar</option>
+                <option value="1">Kawasaki-ZX10R</option>
+                <option value="2">Honda 1000CBR</option>
+                <option value="3">Duke KTM 1200</option>
+            </select>
+        </div>
+
+        <div class="imagen-contenedor">
             <img class="imagen" src="./img/yamahayfz.jpg">
+            <input onclick="MostrarEspecificaciones()" class="boton" type="button" value="Especificaciones">
+            <p id="especificaciones" class="especificaciones-texto">
+                Una de las características especiales de la Yamaha R1M son sus suspensiones electrónicas ERS de Öhlins de última generación. 
+                Para esta edición, la horquilla presurizada de cartucho de gas Öhlins ERS NPX dispone de un pequeño cartucho de gas integrado en el interior del soporte del eje de las horquillas. 
+                Al ejercer 0,6 MPa de presión interna por medio del gas, reduce la cavitación del aceite de las horquillas que se produce como consecuencia de la presión negativa que se genera en la carrera de rebote. 
+                La fuerza de amortiguación conseguida es más lógica para controlar el chasis, su agilidad y su manejo con tiempos por vuelta más bajos. Como complemento, la suspensión trasera Öhlins ha modificado su configuración de precarga.
+            </p>
         </div>
 
-        <div>
+        <div class="imagen-contenedor">
             <img id="imagenDinamica" class="imagen" src="https://us.123rf.com/450wm/urfandadashov/urfandadashov1809/urfandadashov180901275/109135379-foto-no-disponible-icono-del-vector-aislado-en-la-ilustraci%C3%B3n-transparente-transparente-concepto-de-esp.jpg?ver=6">
+            <input onclick="MostrarEspecificaciones()" class="boton" type="button" value="Especificaciones">
+            <p class="especificaciones-texto">
+                blah blah blah
+            </p>
         </div>
+
+
 
     </body>
 </html>
