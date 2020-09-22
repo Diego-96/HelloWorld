@@ -1,17 +1,21 @@
-<html>
+ <html>
   <head>
       <script src="nuevaMoto.js"></script>
+      <link rel="stylesheet" href="nuevaMoto.css" />
     <title>Nueva Moto</title>
   </head>
   <body>
     <form action="">
       <div class="form-group">
-        <label for="txtNombre">Nombre:</label>
-        <input type="text" name="txtNombre" id="txtNombre" />
+        <h1>Formulario de registro</h1>
+        <p>Marca:</p>
+        <label for="txtNombre"></label>
+        <input type="text" name="txtMarca" id="txtMarca" />
       </div>
 
       <div class="form-group">
-        <label for="txtEspecificaciones">Especificaciones:</label>
+        <p>Especificaciones:</p>
+        <label for="txtEspecificaciones"></label>
         <textarea rows="4" name="txtEspecificaciones" id="txtEspecificaciones">
         </textarea>
       </div>
@@ -20,9 +24,9 @@
         <label for="imgMoto">Imagen:</label>
         <input type="file" name="imgMoto" id="imgMoto">
         </textarea>
+        <input class="button" type="button" onclick="guardar()" value="Guardar">
       </div>
 
-      <input type="button" onclick="guardar()" value="Guardar">
     </form>
   </body>
 </html>

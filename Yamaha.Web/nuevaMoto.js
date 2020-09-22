@@ -1,5 +1,5 @@
 async function guardar() {
-  var txtNombre = document.getElementById("txtNombre");
+  var txtNombre = document.getElementById("txtMarca");
   var txtEspecificaciones = document.getElementById("txtEspecificaciones");
   var imgMoto = document.getElementById("imgMoto");
   var imagen = await toBase64(imgMoto.files[0]);
