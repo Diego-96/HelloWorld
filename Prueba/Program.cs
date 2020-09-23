@@ -36,23 +36,10 @@ namespace Prueba
                 {
                     Console.WriteLine(arrayString[i]);
                 }
-            }
-            
-
-
-            Inventario i = new Inventario();
-            int q = 0;
-
-            Producto p = new Producto();
-            p.Nombre = "Chaqueta";
-            i.AgregarProducto(p);
-
-            Producto u = new Producto();            
-            u.Nombre = "Pantalon";    
-            i.AgregarProducto(u);   
+            }   
 
             int[] array = new int[1];  
-            string[] array; 
+            string[] array2 = new string[1]; 
 
             string nombre = "Diego";
             string apellido = "Puentes";
@@ -65,9 +52,7 @@ namespace Prueba
                 Diego Puentes
             */
             
-            
-
-            int numeroUno = 4;
+            /*int numeroUno = 4;
             int numeroDos = 6;
             int resultado = 0;
 
@@ -84,31 +69,15 @@ namespace Prueba
             {
                 resultado = 0;
             }
+            */
 
 
-            Producto[] productos = new Producto[5];
-            productos[0] = new Producto { Nombre = "Camisa", Precio = 100000 };
+            
         }
     }
 
-    class Producto
-    {
-        public string Nombre { get; set; }
-        public int Precio { get; set; }
-        public bool Verificado { get; set; }
-    }
+    
 
-    class Inventario
-    {
-        public int Categoria { get; set; }
-        public int CantidadUnidades { get; set; }
-
-        public void AgregarProducto(Producto producto)
-        {
-            var baseDatos = new List<Producto>();
-            baseDatos.Add(producto);
-        }
-
-    }
+    
 }
 
