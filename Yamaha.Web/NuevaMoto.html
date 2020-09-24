@@ -1,32 +1,34 @@
- <html>
+<html>
   <head>
-      <script src="nuevaMoto.js"></script>
-      <link rel="stylesheet" href="nuevaMoto.css" />
+    <script src="nuevaMoto.js"></script>
+    <link rel="stylesheet" href="nuevaMoto.css" />
     <title>Nueva Moto</title>
   </head>
   <body>
     <form action="">
       <div class="form-group">
         <h1>Formulario de registro</h1>
-        <p>Marca:</p>
-        <label for="txtNombre"></label>
+        <label for="txtNombre">Marca:</label>
         <input type="text" name="txtMarca" id="txtMarca" />
-      </div>
 
-      <div class="form-group">
-        <p>Especificaciones:</p>
-        <label for="txtEspecificaciones"></label>
-        <textarea rows="4" name="txtEspecificaciones" id="txtEspecificaciones">
-        </textarea>
-      </div>
+        <label for="txtEspecificaciones">Especificaciones:</label>
+        <textarea
+          rows="4"
+          name="txtEspecificaciones"
+          id="txtEspecificaciones"
+        ></textarea>
 
-      <div class="form-group">
         <label for="imgMoto">Imagen:</label>
-        <input type="file" name="imgMoto" id="imgMoto">
-        </textarea>
-        <input class="button" type="button" onclick="guardar()" value="Guardar">
-      </div>
+        <input type="file" name="imgMoto" id="imgMoto" />
+        <input
+          class="button"
+          type="button"
+          onclick="guardar()"
+          value="Guardar"
+        />
 
+        <input type="button" value="Regresar" />
+      </div>
     </form>
   </body>
 </html>

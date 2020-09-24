@@ -7,23 +7,29 @@ async function guardar() {
   var moto = {
     nombre: txtNombre.value,
     especificaciones: txtEspecificaciones.value,
-    rutaImagen: imagen
+    rutaImagen: imagen,
   };
 
   GuardarEnBaseDeDatos(moto);
   alert("Se ha guardado la moto con éxito");
 }
 
-function GuardarEnBaseDeDatos(moto) {
+function ObtenerMotos() {
   var listaMotos = localStorage.getItem("ListaMotos");
-  listaMotos.push(moto);
-  localStorage.setItem("ListaMotos", listaMotos);
+  return JSON.parse(listaMotos);
 }
 
-const toBase64 = file =>
+function GuardarEnBaseDeDatos(moto) {
+  var listaMotos = localStorage.getItem("ListaMotos") || "[]";
+  listaMotos = JSON.parse(listaMotos);
+  listaMotos.push(moto);
+  localStorage.setItem("ListaMotos", JSON.stringify(listaMotos));
+}
+
+const toBase64 = (file) =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
-    reader.onerror = error => reject(error);
+    reader.onerror = (error) => reject(error);
   });
