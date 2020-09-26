@@ -1,6 +1,6 @@
 function CambiarImagen() {
   var imagenDinamica = document.getElementById("imagenDinamica");
-  var listadoMotos = document.getElementById("lista");
+  var listadoMotos = document.getElementById("listaMotos");
   var motoSeleccionada = listadoMotos.value;
 
   if (motoSeleccionada == 1) {
@@ -22,4 +22,21 @@ function MostrarEspecificaciones() {
 
 function agregarMoto() {
   window.location = "./NuevaMoto.html";
+}
+
+function ListarMotos() {
+  var listaMotos = document.getElementById("listaMotos");
+  var motos = ConsultarMotos();
+
+  for (var i = 0; i < motos.length; i++) {
+    var option = document.createElement("option");
+    option.value = i + 1;
+    option.innerHTML = motos[i].nombre;
+    listaMotos.appendChild(option);
+  }
+}
+
+function ConsultarMotos() {
+  var motos = localStorage.getItem("ListaMotos") || "[]";
+  return JSON.parse(motos);
 }

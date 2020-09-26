@@ -14,11 +14,6 @@ async function guardar() {
   alert("Se ha guardado la moto con éxito");
 }
 
-function ObtenerMotos() {
-  var listaMotos = localStorage.getItem("ListaMotos");
-  return JSON.parse(listaMotos);
-}
-
 function GuardarEnBaseDeDatos(moto) {
   var listaMotos = localStorage.getItem("ListaMotos") || "[]";
   listaMotos = JSON.parse(listaMotos);
@@ -33,3 +28,7 @@ const toBase64 = (file) =>
     reader.onload = () => resolve(reader.result);
     reader.onerror = (error) => reject(error);
   });
+
+function regresar() {
+  window.location = "./Comparaciones.html";
+}

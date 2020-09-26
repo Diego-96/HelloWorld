@@ -7,28 +7,40 @@
   <body>
     <form action="">
       <div class="form-group">
-        <h1>Formulario de registro</h1>
-        <label for="txtNombre">Marca:</label>
-        <input class="Marca" type="text" name="txtMarca" id="txtMarca" />
+        <h1 class="color-blanco">Formulario de registro</h1>
+        <label class="color-blanco" for="txtNombre">Marca:</label>
+        <input
+          class="marca color-blanco"
+          type="text"
+          name="txtMarca"
+          id="txtMarca"
+        />
 
-        <label for="txtEspecificaciones">Especificaciones:</label>
+        <label class="color-blanco" for="txtEspecificaciones"
+          >Especificaciones:</label
+        >
         <textarea
           rows="4"
           name="txtEspecificaciones"
           id="txtEspecificaciones"
+          class="marca color-blanco"
         ></textarea>
 
-        <label for="imgMoto">Imagen:</label>
-        <input type="file" name="imgMoto" id="imgMoto" />
+        <label class="color-blanco" for="imgMoto">Imagen:</label>
+        <input class="color-blanco" type="file" name="imgMoto" id="imgMoto" />
         <input
-          class="button"
+          class="button color-blanco"
           type="button"
           onclick="guardar()"
           value="Guardar"
         />
 
-        <input class="button" type="button" onclick="regresar()" value="Regresar" />
-
+        <input
+          class="button color-blanco"
+          type="button"
+          onclick="regresar()"
+          value="Regresar"
+        />
       </div>
     </form>
   </body>

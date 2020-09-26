@@ -4,15 +4,12 @@
     <script src="Comparar.js"></script>
   </head>
 
-  <body>
+  <body onload="ListarMotos()">
     <h1>YamahaR1M</h1>
 
     <div>
-      <select id="lista" onchange="CambiarImagen()">
+      <select id="listaMotos" onchange="CambiarImagen()">
         <option value="0">Selececione la moto a comparar</option>
-        <option value="1">Kawasaki-ZX10R</option>
-        <option value="2">Honda 1000CBR</option>
-        <option value="3">Duke KTM 1200</option>
       </select>
 
       <button onclick="agregarMoto()">Agregar</button>
@@ -53,9 +50,7 @@
         type="button"
         value="Especificaciones"
       />
-      <p class="especificaciones-texto">
-        blah blah blah
-      </p>
+      <p class="especificaciones-texto">blah blah blah</p>
     </div>
   </body>
 </html>
