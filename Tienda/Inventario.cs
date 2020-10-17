@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace Tienda
@@ -9,12 +8,13 @@ namespace Tienda
         public int categoria { get; set; }
         public int catidadUnidades { get; set; }
 
-        public void AgregarProducto(Producto productos)
+        public void AgregarProducto(Producto producto)
         {
             var baseDatos = new List<Producto>();
-            baseDatos.Add(productos);
+            baseDatos.Add(producto);
         }
-        public string VerificarBodega()
+
+        public Producto VerificarBodega(string nombreProducto)
         {
             Producto camisa = new Producto();
             camisa.Nombre = "Camisa";
@@ -40,28 +40,52 @@ namespace Tienda
             chaqueta.Nombre = "Chaqueta";
             chaqueta.Precio = 300000;
             chaqueta.Verificado = true;
-            
-            Producto[] productos = new Producto[8];
+
+            Producto guantes = new Producto();
+            guantes.Nombre = "Guantes";
+            guantes.Precio = 20000;
+            guantes.Verificado = false;
+
+            // Producto gafas = new Producto();
+            // gafas.Nombre = "Gafas";
+            // guantes.Precio = 15000;
+            // gafas.Verificado = false;
+
+
+            Producto[] productos = new Producto[5];
             productos[0] = camisa;
             productos[1] = pantalon;
             productos[2] = gorra;
             productos[3] = zapatillas;
             productos[4] = chaqueta;
 
-            return "camisa";
-           
+
+            for (int i = 0; i < productos.Length; i++)
+            {
+                if (productos[i].Nombre == nombreProducto)
+                {
+                    // encontramos el producto
+                    if (productos[i].Verificado == true)
+                    {
+                        // producto verificado
+                        return productos[i];
+                    }
+                }
+            }
+
+            return null;
         }
 
         public class Producto
         {
-        public string Nombre { get; set; }
-        public int Precio { get; set; }
-        public bool Verificado { get; set; }
+            public string Nombre { get; set; }
+            public int Precio { get; set; }
+            public bool Verificado { get; set; }
         }
 
-        
-    }
-    
 
-     
+    }
+
+
+
 }

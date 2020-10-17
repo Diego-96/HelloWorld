@@ -1,4 +1,5 @@
 ﻿using System;
+using static Tienda.Inventario;
 
 namespace Tienda
 {
@@ -6,7 +7,13 @@ namespace Tienda
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Inventario inventario = new Inventario();
+
+            Producto productoVerificado = inventario.VerificarBodega("Camisa");
+
+            int? precio = productoVerificado?.Precio;
+
+            Console.WriteLine(precio);
         }
     }
 }
