@@ -14,7 +14,7 @@ namespace Tienda
             baseDatos.Add(producto);
         }
 
-        public Producto VerificarBodega(string nombreProducto)
+        public Producto[] ListarProductos()
         {
             Producto camisa = new Producto();
             camisa.Nombre = "Camisa";
@@ -40,10 +40,7 @@ namespace Tienda
             chaqueta.Nombre = "Chaqueta";
             chaqueta.Precio = 300000;
             chaqueta.Verificado = true;
-        }
 
-        public Producto ListarProductos() 
-        { 
             Producto[] productos = new Producto[5];
             productos[0] = camisa;
             productos[1] = pantalon;
@@ -51,10 +48,18 @@ namespace Tienda
             productos[3] = zapatillas;
             productos[4] = chaqueta;
 
+            return productos;
+        }
+
+        public Producto VerificarBodega(string codigoProductoABuscar)
+        {
+            Producto[] productos = ListarProductos();
 
             for (int i = 0; i < productos.Length; i++)
             {
-                if (productos[i].Nombre == nombreProducto)
+                string codigoProducto = ObtenerCodigoDeProducto(productos[i].Nombre, i);
+
+                if (codigoProducto == codigoProductoABuscar)
                 {
                     // encontramos el producto
                     if (productos[i].Verificado == true)
@@ -66,6 +71,13 @@ namespace Tienda
             }
 
             return null;
+        }
+
+        public string ObtenerCodigoDeProducto(string nombreProducto, int consecutivo)
+        {
+            consecutivo++;
+            string codigoProducto = nombreProducto.Substring(0, 1) + (consecutivo).ToString();
+            return codigoProducto;
         }
 
         public class Producto
