@@ -40,18 +40,10 @@ namespace Tienda
             chaqueta.Nombre = "Chaqueta";
             chaqueta.Precio = 300000;
             chaqueta.Verificado = true;
+        }
 
-            Producto guantes = new Producto();
-            guantes.Nombre = "Guantes";
-            guantes.Precio = 20000;
-            guantes.Verificado = false;
-
-            // Producto gafas = new Producto();
-            // gafas.Nombre = "Gafas";
-            // guantes.Precio = 15000;
-            // gafas.Verificado = false;
-
-
+        public Producto ListarProductos() 
+        { 
             Producto[] productos = new Producto[5];
             productos[0] = camisa;
             productos[1] = pantalon;
