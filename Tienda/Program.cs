@@ -39,6 +39,8 @@ namespace Tienda
 
                 Console.WriteLine("\n" + productoEncontrado?.Precio);
             }
+
+
         }
 
         static void MostarProductos()
@@ -53,6 +55,26 @@ namespace Tienda
 
                 Console.WriteLine(codigoProducto + ". " + productos[i].Nombre);
             }
+
         }
+
+
+
+
+
+        static int Sumar()
+        {
+            int[] numeros = new int[] { 5, 2, 1 };
+
+            int resultado = numeros[0];
+
+            for (int i = 1; i < numeros.Length; i = i + 1)
+            {
+                resultado = resultado + numeros[i];
+            }
+
+            return resultado;
+        }
+
     }
 }
