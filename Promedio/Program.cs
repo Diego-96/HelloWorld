@@ -33,7 +33,7 @@ namespace Promedio
 
             else if(resultadoDivision > 2.9m && resultadoDivision < 5)
             {
-                Console.WriteLine("Aprobe");
+                Console.WriteLine("Aprobé");
             }
 
             else
